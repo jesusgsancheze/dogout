@@ -1,0 +1,22 @@
+{
+  "name": "dogout",
+  "version": "1.0.0",
+  "description": "Libreta del mánager de softbol: roster, pizarra de lineups, registro de juegos y estadísticas.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch --env-file-if-exists=.env server.js",
+    "create-user": "node --env-file-if-exists=.env scripts/create-user.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "mongodb": "^6.16.0"
+  }
+}
